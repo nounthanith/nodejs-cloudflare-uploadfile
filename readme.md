@@ -1,7 +1,7 @@
--env 
+- env 
 
 ```js
-PORT=3000
+PORT=<your-port>
 MONGO_URL=<your-mongo-url>
 
 ACCESS_KEY_ID=<your-access-key-id>
