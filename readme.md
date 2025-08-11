@@ -1,6 +1,6 @@
 - env 
 
-```js
+```
 PORT=<your-port>
 MONGO_URL=<your-mongo-url>
 
