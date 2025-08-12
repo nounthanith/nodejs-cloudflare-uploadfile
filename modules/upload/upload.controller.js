@@ -6,13 +6,13 @@ const {
 
 const s3 = new S3Client({
   region: "auto",
-  endpoint: "https://b458ee62eb39280552271b7e505c183d.r2.cloudflarestorage.com",
+  endpoint: process.env.ENDPOINT,
   credentials: {
     accessKeyId: process.env.ACCESS_KEY_ID,
     secretAccessKey: process.env.SECRET_ACCESS_KEY,
   },
 });
-const publicUrl = "https://pub-ea72a5a63a674c1dbdbef8bd49f0385a.r2.dev";
+const publicUrl = process.env.PUBLIC_URL;
 
 exports.uploadFile = async (req, res) => {
   const key = `${Date.now()}-${req.file.originalname}`;
