@@ -9,7 +9,7 @@ exports.protected = (req, res, next) => {
 
   req.user = payload;
 
-  console.log("User Unauthorized", req.user);
+//   console.log("User Unauthorized", req.user);
 
   next();
 };
